@@ -71,6 +71,9 @@
 		DE02C90F3D5C42D19369BE7E /* libRNGoogleSignin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FA4B875E14447B838D6577 /* libRNGoogleSignin.a */; };
 		086AE1B6ECC344C28214A680 /* libRNCClipboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D4C13A23B547B6AB2A43A4 /* libRNCClipboard.a */; };
 		7D274E3390F343C2BAFCD8EF /* libRCTFBSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA4A06358F84839AF2D93BC /* libRCTFBSDK.a */; };
+		0776FA4D21A74B7AB6F6C67C /* libRNFBApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E00DF00C64A47F6935A12A8 /* libRNFBApp.a */; };
+		EC6123988F1F4CA4885BACAD /* libRNFBAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E7C248D51A4F79837285B5 /* libRNFBAuth.a */; };
+		8CFF498041A44194A3DC01DB /* libRNAdMobManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCD61B62EB14822BFD000A4 /* libRNAdMobManager.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -420,6 +423,12 @@
 		B5D4C13A23B547B6AB2A43A4 /* libRNCClipboard.a */ = {isa = PBXFileReference; name = "libRNCClipboard.a"; path = "libRNCClipboard.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		27276D5A6B8C454CBAAE013D /* RCTFBSDK.xcodeproj */ = {isa = PBXFileReference; name = "RCTFBSDK.xcodeproj"; path = "../node_modules/react-native-fbsdk/ios/RCTFBSDK.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		9EA4A06358F84839AF2D93BC /* libRCTFBSDK.a */ = {isa = PBXFileReference; name = "libRCTFBSDK.a"; path = "libRCTFBSDK.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		542B2FB604184418B8E4B80E /* RNFBApp.xcodeproj */ = {isa = PBXFileReference; name = "RNFBApp.xcodeproj"; path = "../node_modules/@react-native-firebase/app/ios/RNFBApp.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		4E00DF00C64A47F6935A12A8 /* libRNFBApp.a */ = {isa = PBXFileReference; name = "libRNFBApp.a"; path = "libRNFBApp.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		2E9D7AE6815A41CDB6C19791 /* RNFBAuth.xcodeproj */ = {isa = PBXFileReference; name = "RNFBAuth.xcodeproj"; path = "../node_modules/@react-native-firebase/auth/ios/RNFBAuth.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		A1E7C248D51A4F79837285B5 /* libRNFBAuth.a */ = {isa = PBXFileReference; name = "libRNFBAuth.a"; path = "libRNFBAuth.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		DA8980270D644212A85CD569 /* RNAdMobManager.xcodeproj */ = {isa = PBXFileReference; name = "RNAdMobManager.xcodeproj"; path = "../node_modules/react-native-admob/ios/RNAdMobManager.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		8FCD61B62EB14822BFD000A4 /* libRNAdMobManager.a */ = {isa = PBXFileReference; name = "libRNAdMobManager.a"; path = "libRNAdMobManager.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -459,6 +468,9 @@
 				DE02C90F3D5C42D19369BE7E /* libRNGoogleSignin.a in Frameworks */,
 				086AE1B6ECC344C28214A680 /* libRNCClipboard.a in Frameworks */,
 				7D274E3390F343C2BAFCD8EF /* libRCTFBSDK.a in Frameworks */,
+				0776FA4D21A74B7AB6F6C67C /* libRNFBApp.a in Frameworks */,
+				EC6123988F1F4CA4885BACAD /* libRNFBAuth.a in Frameworks */,
+				8CFF498041A44194A3DC01DB /* libRNAdMobManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,6 +675,9 @@
 				6FA05B88D90F4D37BAE0DB41 /* RNGoogleSignin.xcodeproj */,
 				0AEC9E4B2D9148F0BA776977 /* RNCClipboard.xcodeproj */,
 				27276D5A6B8C454CBAAE013D /* RCTFBSDK.xcodeproj */,
+				542B2FB604184418B8E4B80E /* RNFBApp.xcodeproj */,
+				2E9D7AE6815A41CDB6C19791 /* RNFBAuth.xcodeproj */,
+				DA8980270D644212A85CD569 /* RNAdMobManager.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1346,6 +1361,9 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1360,6 +1378,9 @@
 					"$(SRCROOT)\..\node_modules\react-native-google-signin\ios\RNGoogleSignin",
 					"$(SRCROOT)\..\node_modules\@react-native-community\clipboard\ios",
 					"$(SRCROOT)\..\node_modules\react-native-fbsdk\ios\RCTFBSDK/**",
+					"$(SRCROOT)\..\node_modules\@react-native-firebase\app\ios\RNFBApp",
+					"$(SRCROOT)\..\node_modules\@react-native-firebase\auth\ios\RNFBAuth",
+					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
 				);
 			};
 			name = Debug;
@@ -1396,6 +1417,9 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1410,6 +1434,9 @@
 					"$(SRCROOT)\..\node_modules\react-native-google-signin\ios\RNGoogleSignin",
 					"$(SRCROOT)\..\node_modules\@react-native-community\clipboard\ios",
 					"$(SRCROOT)\..\node_modules\react-native-fbsdk\ios\RCTFBSDK/**",
+					"$(SRCROOT)\..\node_modules\@react-native-firebase\app\ios\RNFBApp",
+					"$(SRCROOT)\..\node_modules\@react-native-firebase\auth\ios\RNFBAuth",
+					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
 				);
 			};
 			name = Release;
@@ -1443,6 +1470,9 @@
 					"$(SRCROOT)\..\node_modules\react-native-google-signin\ios\RNGoogleSignin",
 					"$(SRCROOT)\..\node_modules\@react-native-community\clipboard\ios",
 					"$(SRCROOT)\..\node_modules\react-native-fbsdk\ios\RCTFBSDK/**",
+					"$(SRCROOT)\..\node_modules\@react-native-firebase\app\ios\RNFBApp",
+					"$(SRCROOT)\..\node_modules\@react-native-firebase\auth\ios\RNFBAuth",
+					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
 				);
 			};
 			name = Debug;
@@ -1475,6 +1505,9 @@
 					"$(SRCROOT)\..\node_modules\react-native-google-signin\ios\RNGoogleSignin",
 					"$(SRCROOT)\..\node_modules\@react-native-community\clipboard\ios",
 					"$(SRCROOT)\..\node_modules\react-native-fbsdk\ios\RCTFBSDK/**",
+					"$(SRCROOT)\..\node_modules\@react-native-firebase\app\ios\RNFBApp",
+					"$(SRCROOT)\..\node_modules\@react-native-firebase\auth\ios\RNFBAuth",
+					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
 				);
 			};
 			name = Release;
@@ -1519,6 +1552,9 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1533,6 +1569,9 @@
 					"$(SRCROOT)\..\node_modules\react-native-google-signin\ios\RNGoogleSignin",
 					"$(SRCROOT)\..\node_modules\@react-native-community\clipboard\ios",
 					"$(SRCROOT)\..\node_modules\react-native-fbsdk\ios\RCTFBSDK/**",
+					"$(SRCROOT)\..\node_modules\@react-native-firebase\app\ios\RNFBApp",
+					"$(SRCROOT)\..\node_modules\@react-native-firebase\auth\ios\RNFBAuth",
+					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
 				);
 			};
 			name = Debug;
@@ -1577,6 +1616,9 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1591,6 +1633,9 @@
 					"$(SRCROOT)\..\node_modules\react-native-google-signin\ios\RNGoogleSignin",
 					"$(SRCROOT)\..\node_modules\@react-native-community\clipboard\ios",
 					"$(SRCROOT)\..\node_modules\react-native-fbsdk\ios\RCTFBSDK/**",
+					"$(SRCROOT)\..\node_modules\@react-native-firebase\app\ios\RNFBApp",
+					"$(SRCROOT)\..\node_modules\@react-native-firebase\auth\ios\RNFBAuth",
+					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
 				);
 			};
 			name = Release;
@@ -1634,6 +1679,9 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1648,6 +1696,9 @@
 					"$(SRCROOT)\..\node_modules\react-native-google-signin\ios\RNGoogleSignin",
 					"$(SRCROOT)\..\node_modules\@react-native-community\clipboard\ios",
 					"$(SRCROOT)\..\node_modules\react-native-fbsdk\ios\RCTFBSDK/**",
+					"$(SRCROOT)\..\node_modules\@react-native-firebase\app\ios\RNFBApp",
+					"$(SRCROOT)\..\node_modules\@react-native-firebase\auth\ios\RNFBAuth",
+					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
 				);
 			};
 			name = Debug;
@@ -1691,6 +1742,9 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1705,6 +1759,9 @@
 					"$(SRCROOT)\..\node_modules\react-native-google-signin\ios\RNGoogleSignin",
 					"$(SRCROOT)\..\node_modules\@react-native-community\clipboard\ios",
 					"$(SRCROOT)\..\node_modules\react-native-fbsdk\ios\RCTFBSDK/**",
+					"$(SRCROOT)\..\node_modules\@react-native-firebase\app\ios\RNFBApp",
+					"$(SRCROOT)\..\node_modules\@react-native-firebase\auth\ios\RNFBAuth",
+					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
 				);
 			};
 			name = Release;
