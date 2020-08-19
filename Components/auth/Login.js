@@ -203,7 +203,7 @@ class LoginScreen extends React.Component {
 
 
                                 <Text 
-                                  style={{width: 60,
+                                  style={{width: 100,
                                     fontFamily:'OpenSans-Regular',
                                       fontSize: 18,
                                       fontWeight: '500',

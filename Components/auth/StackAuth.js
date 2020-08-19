@@ -142,8 +142,8 @@ const AuthScreen = (props) => {
         <View
           style={{
             backgroundColor: "white",
-            width: 100,
-            height: 100,
+            width: 0,
+            height: 0,
             borderRadius: 50,
             overflow: "hidden",
             alignSelf: "center",
@@ -152,18 +152,20 @@ const AuthScreen = (props) => {
         />
         <Text
           style={{
+            fontFamily:"Poppins-Bold",
             color: "gray",
             marginTop: 20,
             alignSelf: "center",
             fontWeight: "bold",
           }}
         >
-          Signin with
+          SIGN IN WITH
         </Text>
         <View
           style={{
             flexDirection: "row",
             marginTop: 20,
+            
             justifyContent: "center",
             justifyContent: "space-evenly",
             marginHorizontal: 100,
@@ -188,7 +190,7 @@ const AuthScreen = (props) => {
               <FontAwesome
                 name="facebook-f"
                 color="white"
-                size={20}
+                size={30}
                 style={{ alignSelf: "center" }}
               />
             </View>
@@ -212,7 +214,7 @@ const AuthScreen = (props) => {
               <FontAwesome
                 name="google"
                 color="white"
-                size={20}
+                size={30}
                 style={{ alignSelf: "center" }}
               />
             </View>
@@ -226,7 +228,7 @@ const AuthScreen = (props) => {
             fontWeight: "bold",
           }}
         >
-          or
+          OR
         </Text>
         <TextInput
           placeholder="Email/Phone"
@@ -235,7 +237,7 @@ const AuthScreen = (props) => {
           style={{
             fontWeight: "bold",
             marginHorizontal: 80,
-            marginTop: 50,
+            marginTop: 30,
             color: "white",
           }}
           onChangeText={(text) => {
@@ -303,7 +305,7 @@ const AuthScreen = (props) => {
             !isEmail && !isNaN(text)
               ? isPhone
                 ? (signInWithPhoneNumber(), setIsError(false))
-                : (setError("Please enter valid phone with +"),
+                : (setError("Please enter Country Code before Number"),
                   setIsError(true))
               : !isPhone && isEmail
               ? (signInWithEmail(), setIsError(false))

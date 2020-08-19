@@ -65,12 +65,12 @@ const Signup = () => {
         <View
           style={{
             backgroundColor: "white",
-            width: 100,
-            height: 100,
+            width: 0,
+            height: 0,
             borderRadius: 50,
             overflow: "hidden",
             alignSelf: "center",
-            marginTop: 50,
+            marginTop: 10,
           }}
         />
         <TextInput
@@ -109,7 +109,7 @@ const Signup = () => {
           style={{ backgroundColor: "gray", height: 1, marginHorizontal: 80 }}
         />
         <TextInput
-          placeholder="Verify Password"
+          placeholder="Confirm Password"
           placeholderTextColor="gray"
           style={{
             fontWeight: "bold",
@@ -165,7 +165,7 @@ const Signup = () => {
               marginTop: 50,
             }}
           >
-            Verify
+            Continue
           </Text>
         </TouchableOpacity>
       </View>

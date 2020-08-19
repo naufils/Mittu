@@ -513,7 +513,7 @@ export default class ExploreScreen extends React.Component {
                         padding: 7,
                         borderColor: "#F9A818",
                         borderWidth: 1,
-                        borderRadius: 14,
+                        borderRadius: 60,
                         width: 105,
                         textAlign: "center",
                         fontFamily: "OpenSans-Regular",
@@ -628,7 +628,7 @@ const styles = StyleSheet.create({
   textInput: {
     width: "90%",
     height: 50,
-    fontFamily: "OpenSans-Regular",
+    fontFamily: "Poppins-Bold",
     fontSize: 16,
     borderRadius: 20,
     borderWidth: 1,

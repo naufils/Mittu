@@ -30,7 +30,7 @@ const HomeScreen = createMaterialTopTabNavigator(
       activeTintColor: '#F9A818',
       inactiveTintColor: 'white',
       labelStyle:{
-        fontFamily: 'OpenSans-Bold',
+        fontFamily: 'Poppins-Bold',
         fontSize:12,
         fontWeight:'500',
 

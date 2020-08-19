@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
         fontSize: 22,
         // fontWeight: "bold",
         fontStyle: "normal",
-        letterSpacing: 0,
+        letterSpacing: 20,
         color: "#F9A818",
     },
 
