@@ -23,7 +23,7 @@ const AppContainer = createStackNavigator(
     initialRouteName: "CoverScreen",
     headerMode: "none",
     headerTitleAlign: "center",
-    title: "Hometheater",
+    title: "Mittu",
     defaultNavigationOptions: {
       headerStyle: {
         height: 20,

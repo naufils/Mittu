@@ -1,4 +1,4 @@
-package com.thehometheatre;
+package com.mittuapp;
 
 import com.facebook.react.ReactActivity;
 
@@ -17,7 +17,7 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "thehometheatre";
+        return "mittuapp";
     }
 
     @Override

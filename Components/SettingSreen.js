@@ -52,7 +52,7 @@ class SettingScreen extends React.Component {
                   );
                 } else {
                   ToastAndroid.show(
-                    "Dta not found!, Please try again",
+                    "Data not found!, Please try again",
                     ToastAndroid.SHORT
                   );
                 }
@@ -95,6 +95,15 @@ class SettingScreen extends React.Component {
         this.props.navigation.navigate("AuthScreen");
       }
     });
+  };
+
+
+  onPressAbout = () => {
+    const pushAction = StackActions.push({
+      routeName: "Subscription",
+    });
+
+    this.props.navigation.dispatch(pushAction);
   };
 
   onPressAbout = () => {
@@ -161,7 +170,14 @@ class SettingScreen extends React.Component {
           {/*<View style={styles.innerContainer}>
                 <Text style={styles.text}>Contact Us</Text>
               </View>*/}
+              
 
+              <View style={styles.innerContainer}>
+            <Text style={styles.text} onPress={() => this.onPressSubscription()}>
+              Subscription
+            </Text>
+          </View>
+          
           <View style={styles.innerContainer}>
             <Text style={styles.text} onPress={() => this.onPressAbout()}>
               About

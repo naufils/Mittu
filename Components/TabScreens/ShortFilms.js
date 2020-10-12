@@ -115,7 +115,7 @@ class ShortFilms extends React.Component {
             <Text
               style={{
                 padding: 7,
-                color: "#F9A818",
+                color: "#42B649",
                 fontFamily: "OpenSans-Bold",
                 fontSize: 16,
               }}
@@ -134,16 +134,16 @@ class ShortFilms extends React.Component {
                       marginTop: 1,
                       flexDirection: "row",
                       marginRight: 5,
-                      width: 114,
+                      width: 140,
                     }}
                     key={i}
                   >
                     <TouchableOpacity onPress={() => this.onPressImage(item)}>
                       <Image
                         style={{
-                          width: 110,
-                          height: 140,
-                          borderRadius: 3,
+                          width: 140,
+                          height: 78,
+                          borderRadius: 2,
                           backgroundColor: "grey",
                         }}
                         source={{ uri: item.vid_thumbs }}
@@ -151,7 +151,7 @@ class ShortFilms extends React.Component {
                       <Text
                         style={{
                           fontFamily: "OpenSans-Regular",
-                          width: 110,
+                          width: 140,
                           color: "white",
                           flex: 1,
                           flexWrap: "wrap",
@@ -182,7 +182,7 @@ class ShortFilms extends React.Component {
               alignContent: "center",
             }}
           >
-            <ActivityIndicator size="large" color="#F9A818" />
+            <ActivityIndicator size="large" color="#42B649" />
           </View>
         ) : null}
         <ScrollView
@@ -201,7 +201,7 @@ class ShortFilms extends React.Component {
           >
             <AdMobBanner
               adSize="banner"
-              adUnitID="ca-app-pub-4418546683602188/8306223710"
+              adUnitID="ca-app-pub-4418546683602188/6560934144"
               onAdFailedToLoad={(error) => console.log(error)}
             />
           </View>

@@ -1,4 +1,4 @@
-package com.thehometheatre;
+package com.mittuapp;
 
 import android.app.Application;
 

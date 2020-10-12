@@ -45,14 +45,14 @@ export default class CoverScreen extends React.Component {
 
   render() {
     return (
-      <SafeAreaView style={{ flex: 1, backgroundColor: "#121212" }}>
-        <StatusBar hidden={false} animated backgroundColor="#121212" />
+      <SafeAreaView style={{ flex: 1, backgroundColor: "#000000" }}>
+        <StatusBar hidden={false} animated backgroundColor="#000000" />
         <View
           style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
         >
           <Image
             style={{ width: 230, height: 230 }}
-            source={require("../../assets/CoverLogo.png")}
+            source={require("../../assets/mittulogo.png")}
           />
         </View>
       </SafeAreaView>

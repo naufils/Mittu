@@ -51,13 +51,13 @@ class Privacy extends Component {
                 <View style={{marginTop:25, padding:30}}>
                 <Text style={{fontSize:18,color:'white', fontFamily:'OpenSans-Bold', marginBottom:10}}>Please read carefully </Text>
 
-                <Text style={{fontSize:16,color:'white', fontFamily:'OpenSans-Bold', marginBottom:10}}>This Privacy Policy (“Privacy Policy”) applies to Hometheatre Site/ App platforms”). </Text>
+                <Text style={{fontSize:16,color:'white', fontFamily:'OpenSans-Bold', marginBottom:10}}>This Privacy Policy (“Privacy Policy”) applies to Mittu Site/ App platforms”). </Text>
 
                 <Text style={{fontSize:16,color:'white', fontFamily:'OpenSans-Bold', marginBottom:10}}>This Privacy Policy should be read in conjunction with the Terms of Use available on the “Site/s or App/s”. Personal Information/Data defined below of a user/s is collected if the user/s registers with the Site/s or App/s, accesses the Site/s or App/s or takes any action on the Site/s or App/s or uses or accesses the Services as defined in the Terms of Use. The terms ‘Personal Information’ and ‘Sensitive Personal Information or Information’ shall have the meaning ascribed to it under the Indian Information Technology Act, 2000 read with the Information Technology. </Text>
 
                 <Text style={{fontSize:16,color:'white', fontFamily:'OpenSans-Bold', marginBottom:5}}>WHAT DO WE DO WITH YOUR INFORMATION? </Text>
                 <View style={{paddingLeft:20, marginBottom:10}}>                  
-                        <Text style={{fontSize:16,color:'white', fontWeight:'400', marginBottom:5}}>
+                        <Text style={{fontSize:16,color:'white', fontWeight:'200', marginBottom:5}}>
                             When you subscribe to something from our packages as part of the buying and selling process, we collect the personal information you give us such as your name, address and email address. 
                         </Text>
                         <Text style={{fontSize:16,color:'white', fontWeight:'400', marginBottom:5}}>
@@ -79,7 +79,7 @@ class Privacy extends Component {
                 <Text style={{fontSize:16,color:'white', fontFamily:'OpenSans-Bold', marginBottom:5}}>HOW DO I WITHDRAW MY CONSENT? </Text>
                 <View style={{paddingLeft:20, marginBottom:10}}>                  
                         <Text style={{fontSize:16,color:'white', fontWeight:'400', marginBottom:5}}>
-                            If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, for the continued collection, use or disclosure of your information, at any time, by emailing us at info.hometheatreapp@gmail.com or contacting us at the address provided on the website. 
+                            If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, for the continued collection, use or disclosure of your information, at any time, by emailing us at mittuapplication@gmail.com or contacting us at the address provided on the website. 
                         </Text>
                 </View>
                 <Text style={{fontSize:16,color:'white', fontFamily:'OpenSans-Bold', marginBottom:5}}>DISCLOSURE </Text>
@@ -142,7 +142,7 @@ class Privacy extends Component {
                 <Text style={{fontSize:16,color:'white', fontFamily:'OpenSans-Bold', marginBottom:5}}>QUESTIONS AND CONTACT INFORMATION </Text>
                 <View style={{paddingLeft:20,marginBottom:10}}>                  
                         <Text style={{fontSize:16,color:'white', fontWeight:'400', marginBottom:5}}>
-                            If you would like to: access, correct, amend or delete any personal information we have, register a complaint, or simply want more information, mail our Privacy Compliance Officer at info.hometheatreapp@gmail.com Or by contacting at the company contact which is hereby incorporated by this reference into the Terms of Service. the Terms of Service 
+                            If you would like to: access, correct, amend or delete any personal information we have, register a complaint, or simply want more information, mail our Privacy Compliance Officer at mittuapplication@gmail.com Or by contacting at the company contact which is hereby incorporated by this reference into the Terms of Service. the Terms of Service 
                         </Text>
                 </View>
                 

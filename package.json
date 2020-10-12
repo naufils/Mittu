@@ -1,5 +1,5 @@
 {
-  "name": "thehometheatre",
+  "name": "mittuapp",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -46,7 +46,6 @@
     "metro-react-native-babel-preset": "0.54.1",
     "react-test-renderer": "16.8.3"
   },
-  
   "jest": {
     "preset": "react-native"
   }

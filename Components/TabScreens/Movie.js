@@ -119,7 +119,7 @@ class Movie extends React.Component {
             <Text
               style={{
                 padding: 7,
-                color: "#F9A818",
+                color: "#42B649",
                 fontFamily: "OpenSans-Bold",
                 fontSize: 16,
               }}
@@ -187,7 +187,7 @@ class Movie extends React.Component {
               alignContent: "center",
             }}
           >
-            <ActivityIndicator size="large" color="#F9A818" />
+            <ActivityIndicator size="large" color="#42B649" />
           </View>
         ) : null}
         <ScrollView
@@ -206,7 +206,7 @@ class Movie extends React.Component {
           >
             <AdMobBanner
               adSize="banner"
-              adUnitID="ca-app-pub-4418546683602188/8306223710"
+              adUnitID="ca-app-pub-4418546683602188/6560934144"
               onAdFailedToLoad={(error) => console.log(error)}
             />
           </View>

@@ -48,8 +48,8 @@ class About extends Component {
                 /> : null}
 
                 <View style={{marginTop:25, padding:30}}>
-                    <Text style={{fontSize:18,fontFamily:'OpenSans-Bold', color:'white', marginBottom:10}}>We present you India’s most exciting video streaming app! Get ready to hinge and binge with our amazing range of content! </Text>
-                    <Text style={{fontSize:16,fontFamily:'OpenSans-Regular',color:'white', marginBottom:10}}>The HomeTheatre App Or Site is a subscription-based video on demand (VOD) service. It is a video streaming app 
+                    <Text style={{fontSize:18,fontFamily:'OpenSans-Bold', color:'white', marginBottom:10}}>We present you India’s most exciting and Hot video streaming app MITTU ! Get ready to hinge and binge with our amazing range of content! </Text>
+                    <Text style={{fontSize:16,fontFamily:'OpenSans-Regular',color:'white', marginBottom:10}}>The Mittu App Or Site is a subscription-based video on demand (VOD) service. It is a video streaming app 
                         to please all your tastes and the exciting part is that we present videos in your own language! </Text>
 
  

@@ -119,7 +119,7 @@ class VideoProfileScreen extends React.Component {
               >
                 <Image
                   width={deviceWidth}
-                  height={300}
+                  height={220}
                   source={{ uri: this.state.VideoData.vid_thumbs }}
                 />
                 <View
@@ -131,9 +131,9 @@ class VideoProfileScreen extends React.Component {
                 >
                   <Image
                     source={PlayIcon}
-                    style={{ position: "absolute", opacity: 1 }}
-                    width={70}
-                    height={70}
+                    style={{ position: "absolute", opacity: 20 }}
+                    width={50}
+                    height={50}
                   />
                 </View>
               </TouchableOpacity>

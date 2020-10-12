@@ -25,9 +25,9 @@ const HomeScreen = createMaterialTopTabNavigator(
         width: 140
       },
       'indicatorStyle': {
-        backgroundColor: '#F9A818'
+        backgroundColor: '#42B649'
       },
-      activeTintColor: '#F9A818',
+      activeTintColor: '#42B649',
       inactiveTintColor: 'white',
       labelStyle:{
         fontFamily: 'Poppins-Bold',

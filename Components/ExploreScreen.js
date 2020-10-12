@@ -253,13 +253,13 @@ export default class ExploreScreen extends React.Component {
       images1 = this.state.searchItem.map((item, i) => {
         console.log("Item", item.vid_name);
         return (
-          <View style={{ paddingLeft: 5, paddingRight: 1, width: 114 }} key={i}>
+          <View style={{ paddingLeft: 5, paddingRight: 1, width: 140 }} key={i}>
             <TouchableOpacity onPress={() => this.onPressImage(item)}>
               <Image
                 style={{
-                  width: 110,
-                  height: 140,
-                  borderRadius: 3,
+                  width: 140,
+                  height: 78,
+                  borderRadius: 2,
                   backgroundColor: "grey",
                 }}
                 source={{ uri: item.vid_thumbs }}
@@ -267,7 +267,7 @@ export default class ExploreScreen extends React.Component {
               <Text
                 style={{
                   fontFamily: "OpenSans-Regular",
-                  width: 110,
+                  width: 140,
                   color: "white",
                   paddingTop: 5,
                   flex: 1,
@@ -308,9 +308,9 @@ export default class ExploreScreen extends React.Component {
               <TouchableOpacity onPress={() => this.onPressImage(item)}>
                 <Image
                   style={{
-                    width: 110,
-                    height: 140,
-                    borderRadius: 3,
+                    width: 140,
+                    height: 78,
+                    borderRadius: 2,
                     backgroundColor: "grey",
                   }}
                   source={{ uri: item.vid_thumbs }}
@@ -318,7 +318,7 @@ export default class ExploreScreen extends React.Component {
                 <Text
                   style={{
                     fontFamily: "OpenSans-Regular",
-                    width: 110,
+                    width: 140,
                     color: "white",
                     paddingTop: 5,
                     flex: 1,
@@ -362,16 +362,16 @@ export default class ExploreScreen extends React.Component {
                       marginTop: 10,
                       flexDirection: "row",
                       marginRight: 5,
-                      width: 114,
+                      width: 140,
                     }}
                     key={index}
                   >
                     <TouchableOpacity onPress={() => this.onPressImage(item)}>
                       <Image
                         style={{
-                          width: 110,
-                          height: 140,
-                          borderRadius: 3,
+                          width: 140,
+                          height: 78,
+                          borderRadius: 2,
                           backgroundColor: "#121212",
                         }}
                         source={{ uri: item.vid_thumbs }}
@@ -379,7 +379,7 @@ export default class ExploreScreen extends React.Component {
                       <Text
                         style={{
                           fontFamily: "OpenSans-Regular",
-                          width: 110,
+                          width: 140,
                           color: "white",
                           flex: 1,
                           flexWrap: "wrap",
@@ -447,7 +447,7 @@ export default class ExploreScreen extends React.Component {
                     style={{
                       paddingLeft: 5,
                       paddingRight: 1,
-                      width: 114,
+                      width: 140,
                       flex: 1,
                       justifyContent: "space-around",
                       alignItems: "center",
@@ -457,9 +457,9 @@ export default class ExploreScreen extends React.Component {
                     <TouchableOpacity onPress={() => this.onPressImage(item)}>
                       <Image
                         style={{
-                          width: 110,
-                          height: 140,
-                          borderRadius: 3,
+                          width: 140,
+                          height: 78,
+                          borderRadius: 2,
                           backgroundColor: "grey",
                         }}
                         source={{ uri: item.vid_thumbs }}
@@ -467,7 +467,7 @@ export default class ExploreScreen extends React.Component {
                       <Text
                         style={{
                           fontFamily: "OpenSans-Regular",
-                          width: 110,
+                          width: 140,
                           color: "white",
                           paddingTop: 5,
                           flex: 1,
@@ -511,13 +511,13 @@ export default class ExploreScreen extends React.Component {
                     <Text
                       style={{
                         padding: 7,
-                        borderColor: "#F9A818",
+                        borderColor: "#42B649",
                         borderWidth: 1,
                         borderRadius: 60,
                         width: 105,
                         textAlign: "center",
                         fontFamily: "OpenSans-Regular",
-                        color: "#F9A818",
+                        color: "#42B649",
                         flex: 1,
                         flexWrap: "wrap",
                       }}
@@ -537,7 +537,7 @@ export default class ExploreScreen extends React.Component {
           >
             <AdMobBanner
               adSize="banner"
-              adUnitID="ca-app-pub-4418546683602188/8306223710"
+              adUnitID="ca-app-pub-4418546683602188/6560934144"
               onAdFailedToLoad={(error) => console.log(error)}
             />
           </View>
@@ -553,7 +553,7 @@ export default class ExploreScreen extends React.Component {
                     style={{
                       paddingLeft: 5,
                       paddingRight: 1,
-                      width: 114,
+                      width: 140,
                       flex: 1 / 3,
                     }}
                     key={index}
@@ -561,9 +561,9 @@ export default class ExploreScreen extends React.Component {
                     <TouchableOpacity onPress={() => this.onPressImage(item)}>
                       <Image
                         style={{
-                          width: 110,
-                          height: 140,
-                          borderRadius: 3,
+                          width: 140,
+                          height: 78,
+                          borderRadius: 2,
                           backgroundColor: "grey",
                         }}
                         source={{ uri: item.vid_thumbs }}
@@ -571,7 +571,7 @@ export default class ExploreScreen extends React.Component {
                       <Text
                         style={{
                           fontFamily: "OpenSans-Regular",
-                          width: 110,
+                          width: 140,
                           color: "white",
                           paddingTop: 5,
                           flex: 1,
