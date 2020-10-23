@@ -206,7 +206,7 @@ class Movie extends React.Component {
           >
             <AdMobBanner
               adSize="banner"
-              adUnitID="ca-app-pub-4418546683602188/6560934144"
+              adUnitID="ca-app-pub-7756898445257106/9371736210"
               onAdFailedToLoad={(error) => console.log(error)}
             />
           </View>

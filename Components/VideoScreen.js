@@ -54,7 +54,7 @@ export default class ProfileScreen extends PureComponent {
 
   showInterstitialAd = () => {
     // Display an interstitial
-    AdMobInterstitial.setAdUnitID("ca-app-pub-4418546683602188/5488488688");
+    AdMobInterstitial.setAdUnitID("ca-app-pub-7756898445257106/4950927867");
     AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
   };
 
