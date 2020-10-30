@@ -28,7 +28,7 @@ class LoginScreen extends React.Component {
     return true;
   }
 
-  
+
 
   onEmailChanged = (value) => {
     if(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(value.trim())){
@@ -89,7 +89,7 @@ class LoginScreen extends React.Component {
               let token=responseJson.token
               let userDetails=responseJson.result[0].users_id;
 
-              AsyncStorage.setItem("hometheaterUser", userDetails); 
+              AsyncStorage.setItem("hometheaterUser", userDetails);
 
               AsyncStorage.setItem("hometheaterToken", token);
 
@@ -104,7 +104,7 @@ class LoginScreen extends React.Component {
 
           } else {
             if(responseJson.dbError){
-              
+
               this.setState({
                 userDetails:[]
               })
@@ -127,7 +127,7 @@ class LoginScreen extends React.Component {
 
       }
   }
-  
+
     render() {
 
       console.log("State", this.state);
@@ -164,7 +164,7 @@ class LoginScreen extends React.Component {
             <View style={{justifyContent:'space-between', flexDirection:'row', padding:10, paddingBottom:20}}>
                 <View>
 
-                    <TextField 
+                    <TextField
                       onChangeText={this.onPasswordChanged}
                       label="Password"
                       value={this.state.password}
@@ -202,14 +202,14 @@ class LoginScreen extends React.Component {
                               }}>
 
 
-                                <Text 
+                                <Text
                                   style={{width: 100,
                                     fontFamily:'OpenSans-Regular',
                                       fontSize: 18,
                                       fontWeight: '500',
                                       fontStyle: 'normal',
                                       alignSelf:'center',
-                                      color: '#ffffff'}} 
+                                      color: 'black'}} 
                                 >LOGIN</Text>
                 </LinearGradient>
               </TouchableOpacity>
@@ -224,8 +224,8 @@ class LoginScreen extends React.Component {
   const styles = StyleSheet.create({
       container : {
         flex: 1,
-        justifyContent: 'center', 
-        alignItems: 'center', 
+        justifyContent: 'center',
+        alignItems: 'center',
         backgroundColor:'black',
       }
   })

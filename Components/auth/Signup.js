@@ -4,13 +4,17 @@ import {
   Dimensions,
   Text,
   TextInput,
+  ToastAndroid,
   TouchableOpacity,
+  AsyncStorage,
   KeyboardAvoidingView,
   Platform,
 } from "react-native";
 import auth from "@react-native-firebase/auth";
+import config from '../../config';
 
-const Signup = () => {
+
+const Signup = (props) => {
   const [email, setEmail] = useState();
   const [isemail, setIsEmail] = useState(false);
   const [isErrorEnabled, setErrorEnabled] = useState(false);
@@ -18,11 +22,43 @@ const Signup = () => {
   const [verifypassword, setVerifyPassword] = useState();
   const [error, setError] = useState();
 
-  CreateAccount = () => {
+  function CreateAccount(){
     auth()
       .createUserWithEmailAndPassword(email, password)
-      .then(() => {
+      .then((res) => {
+        fetch(`${config.localhost_url}/chkStatus`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({email: res.user.email})
+        })
+        .then((res)=>{
+          console.log(res)
+        })
+        .catch((err)=>{
+          console.log("error")
+        })
+        AsyncStorage.setItem("hometheaterusername", res.user.email);
+        fetch(`${config.localhost_url}/accountcreated`,{
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({email: res.user.email})
+        })
+        .then((response) => response.json())
+        .then((responseJson) => {
+          console.log(responseJson)
+        })
+        .catch(err => {
+          console.log(err)
+          ToastAndroid.show("Connection Error! Please try again", ToastAndroid.BOTTOM)
+        });
+        props.navigation.navigate("PaymentScreenFirst");
         auth().currentUseruser.sendEmailVerification();
+        ToastAndroid.show("Send Created", ToastAndroid.BOTTOM);
+        alert("message")
       })
       .catch((error) => {
         if (error.code === "auth/email-already-in-use") {

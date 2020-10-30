@@ -9,6 +9,7 @@ import {
   TouchableOpacity,
   Dimensions,
   StatusBar,
+  AsyncStorage,
   RefreshControl,
   BackHandler,
   ActivityIndicator,
@@ -33,7 +34,21 @@ class Featured extends React.Component {
 
   componentDidMount() {
     console.log("DEVICE_WIDTH", DEVICE_WIDTH);
-
+    AsyncStorage.getItem("hometheaterusername", (err, email)=>{
+      fetch(`${config.localhost_url}/chkStatus`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({email: email})
+      })
+      .then((res)=>{
+        console.log(res)
+      })
+      .catch((err)=>{
+        console.log("error")
+      });
+    });
     this.backHandler = BackHandler.addEventListener(
       "hardwareBackPress",
       this.handleBackPress

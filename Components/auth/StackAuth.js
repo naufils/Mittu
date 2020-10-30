@@ -15,6 +15,7 @@ import { TextInput, TouchableOpacity } from "react-native-gesture-handler";
 import auth from "@react-native-firebase/auth";
 import { GoogleSignin } from "react-native-google-signin";
 import { LoginManager, AccessToken } from "react-native-fbsdk";
+import config from '../../config';
 
 const AuthScreen = (props) => {
   const [isEmail, setIsEmail] = useState(false);
@@ -39,7 +40,19 @@ const AuthScreen = (props) => {
         AsyncStorage.setItem("hometheaterusername", user._user.email);
       else if (user._user.phoneNumber !== null)
         AsyncStorage.setItem("hometheaterusername", user._user.phoneNumber);
-
+      fetch(`${config.localhost_url}/chkStatus`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({email: user._user.email})
+      })
+      .then((res)=>{
+        console.log(res)
+      })
+      .catch((err)=>{
+        console.log("error")
+      });
       props.navigation.navigate("TabIndex", { token: user._user.uid });
     }
     if (initializing) setInitializing(false);
@@ -95,6 +108,8 @@ const AuthScreen = (props) => {
 
     // Sign-in the user with the credential
     return auth().signInWithCredential(googleCredential);
+
+
   }
 
   async function signInWithPhoneNumber() {
@@ -106,6 +121,7 @@ const AuthScreen = (props) => {
   }
   async function signInWithEmail() {
     auth().signInWithEmailAndPassword(text, pass);
+
   }
   validate = (text) => {
     let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -165,7 +181,7 @@ const AuthScreen = (props) => {
           style={{
             flexDirection: "row",
             marginTop: 20,
-            
+
             justifyContent: "center",
             justifyContent: "space-evenly",
             marginHorizontal: 100,

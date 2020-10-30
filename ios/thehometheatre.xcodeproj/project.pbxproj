@@ -75,6 +75,9 @@
 		EC6123988F1F4CA4885BACAD /* libRNFBAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E7C248D51A4F79837285B5 /* libRNFBAuth.a */; };
 		8CFF498041A44194A3DC01DB /* libRNAdMobManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCD61B62EB14822BFD000A4 /* libRNAdMobManager.a */; };
 		41F763D69EF446E88CE79605 /* libRNFBAdMob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19CD74FEA0164C9C8110B52C /* libRNFBAdMob.a */; };
+		FE42F78087F546D4B8E6A166 /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 448BC89F201D490CBB2C3204 /* libRNSVG.a */; };
+		2106DD0C7A7D460B89D2A65B /* libRNSVG-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A52255FD5D3A48108384D1DA /* libRNSVG-tvOS.a */; };
+		649B2F63486142EA8009E5AC /* libRazorpayCheckout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BFDF5AA2514DD8BE9F8DB8 /* libRazorpayCheckout.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -432,6 +435,11 @@
 		8FCD61B62EB14822BFD000A4 /* libRNAdMobManager.a */ = {isa = PBXFileReference; name = "libRNAdMobManager.a"; path = "libRNAdMobManager.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		A57EDAD859DB45B180DEC5E1 /* RNFBAdMob.xcodeproj */ = {isa = PBXFileReference; name = "RNFBAdMob.xcodeproj"; path = "../node_modules/@react-native-firebase/admob/ios/RNFBAdMob.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		19CD74FEA0164C9C8110B52C /* libRNFBAdMob.a */ = {isa = PBXFileReference; name = "libRNFBAdMob.a"; path = "libRNFBAdMob.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		51147E05FF5A48DBB6A672C9 /* RNSVG.xcodeproj */ = {isa = PBXFileReference; name = "RNSVG.xcodeproj"; path = "../node_modules/react-native-svg/ios/RNSVG.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		448BC89F201D490CBB2C3204 /* libRNSVG.a */ = {isa = PBXFileReference; name = "libRNSVG.a"; path = "libRNSVG.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		A52255FD5D3A48108384D1DA /* libRNSVG-tvOS.a */ = {isa = PBXFileReference; name = "libRNSVG-tvOS.a"; path = "libRNSVG-tvOS.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		AFC3D6C0FC33491289238B91 /* RazorpayCheckout.xcodeproj */ = {isa = PBXFileReference; name = "RazorpayCheckout.xcodeproj"; path = "../node_modules/react-native-razorpay/ios/RazorpayCheckout.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		86BFDF5AA2514DD8BE9F8DB8 /* libRazorpayCheckout.a */ = {isa = PBXFileReference; name = "libRazorpayCheckout.a"; path = "libRazorpayCheckout.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -475,6 +483,8 @@
 				EC6123988F1F4CA4885BACAD /* libRNFBAuth.a in Frameworks */,
 				8CFF498041A44194A3DC01DB /* libRNAdMobManager.a in Frameworks */,
 				41F763D69EF446E88CE79605 /* libRNFBAdMob.a in Frameworks */,
+				FE42F78087F546D4B8E6A166 /* libRNSVG.a in Frameworks */,
+				649B2F63486142EA8009E5AC /* libRazorpayCheckout.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +505,7 @@
 				A7A92B10E14747898784D0CB /* libRNVectorIcons-tvOS.a in Frameworks */,
 				FA64398E0A6E454AB593BC80 /* libRNReanimated-tvOS.a in Frameworks */,
 				E6D802A5137A4A4B9BE5ECF8 /* libRNScreens-tvOS.a in Frameworks */,
+				2106DD0C7A7D460B89D2A65B /* libRNSVG-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,6 +694,8 @@
 				2E9D7AE6815A41CDB6C19791 /* RNFBAuth.xcodeproj */,
 				DA8980270D644212A85CD569 /* RNAdMobManager.xcodeproj */,
 				A57EDAD859DB45B180DEC5E1 /* RNFBAdMob.xcodeproj */,
+				51147E05FF5A48DBB6A672C9 /* RNSVG.xcodeproj */,
+				AFC3D6C0FC33491289238B91 /* RazorpayCheckout.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1370,6 +1383,9 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1388,6 +1404,8 @@
 					"$(SRCROOT)\..\node_modules\@react-native-firebase\auth\ios\RNFBAuth",
 					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
 					"$(SRCROOT)\..\node_modules\@react-native-firebase\admob\ios\RNFBAdMob",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-razorpay\ios",
 				);
 			};
 			name = Debug;
@@ -1428,6 +1446,9 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1446,6 +1467,8 @@
 					"$(SRCROOT)\..\node_modules\@react-native-firebase\auth\ios\RNFBAuth",
 					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
 					"$(SRCROOT)\..\node_modules\@react-native-firebase\admob\ios\RNFBAdMob",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-razorpay\ios",
 				);
 			};
 			name = Release;
@@ -1483,6 +1506,8 @@
 					"$(SRCROOT)\..\node_modules\@react-native-firebase\auth\ios\RNFBAuth",
 					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
 					"$(SRCROOT)\..\node_modules\@react-native-firebase\admob\ios\RNFBAdMob",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-razorpay\ios",
 				);
 			};
 			name = Debug;
@@ -1519,6 +1544,8 @@
 					"$(SRCROOT)\..\node_modules\@react-native-firebase\auth\ios\RNFBAuth",
 					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
 					"$(SRCROOT)\..\node_modules\@react-native-firebase\admob\ios\RNFBAdMob",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-razorpay\ios",
 				);
 			};
 			name = Release;
@@ -1567,6 +1594,9 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1585,6 +1615,8 @@
 					"$(SRCROOT)\..\node_modules\@react-native-firebase\auth\ios\RNFBAuth",
 					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
 					"$(SRCROOT)\..\node_modules\@react-native-firebase\admob\ios\RNFBAdMob",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-razorpay\ios",
 				);
 			};
 			name = Debug;
@@ -1633,6 +1665,9 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1651,6 +1686,8 @@
 					"$(SRCROOT)\..\node_modules\@react-native-firebase\auth\ios\RNFBAuth",
 					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
 					"$(SRCROOT)\..\node_modules\@react-native-firebase\admob\ios\RNFBAdMob",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-razorpay\ios",
 				);
 			};
 			name = Release;
@@ -1698,6 +1735,9 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1716,6 +1756,8 @@
 					"$(SRCROOT)\..\node_modules\@react-native-firebase\auth\ios\RNFBAuth",
 					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
 					"$(SRCROOT)\..\node_modules\@react-native-firebase\admob\ios\RNFBAdMob",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-razorpay\ios",
 				);
 			};
 			name = Debug;
@@ -1763,6 +1805,9 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1781,6 +1826,8 @@
 					"$(SRCROOT)\..\node_modules\@react-native-firebase\auth\ios\RNFBAuth",
 					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
 					"$(SRCROOT)\..\node_modules\@react-native-firebase\admob\ios\RNFBAdMob",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-razorpay\ios",
 				);
 			};
 			name = Release;

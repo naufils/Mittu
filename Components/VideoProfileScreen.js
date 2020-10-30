@@ -9,6 +9,8 @@ import {
   SafeAreaView,
   BackHandler,
   Dimensions,
+  AsyncStorage,
+  ToastAndroid,
   StatusBar,
 } from "react-native";
 import Icons from "react-native-vector-icons/Ionicons";
@@ -16,6 +18,7 @@ import { StackActions, withNavigationFocus } from "react-navigation";
 import PlayIcon from "./assests/img/PlayIcon.png";
 import Header from "./Header/Header";
 import { AdMobInterstitial } from "react-native-admob";
+import config from '../config';
 
 const deviceWidth = Dimensions.get("window").width;
 const deviceHeight = Dimensions.get("window").height;
@@ -23,13 +26,36 @@ const deviceHeight = Dimensions.get("window").height;
 class VideoProfileScreen extends React.Component {
   showInterstitialAd = () => {
     // Display an interstitial
+
     AdMobInterstitial.setAdUnitID("ca-app-pub-7756898445257106/4950927867");
     AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
   };
 
   constructor(props) {
     super(props);
-    this.showInterstitialAd();
+    AsyncStorage.getItem("hometheaterusername", (err, email)=>{
+
+
+      fetch(`${config.localhost_url}/planpurchased`,{
+        method: 'POST',
+        headers:{
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({email: email})
+      })
+      .then((response) => response.json())
+      .then((responseJson) => {
+        console.log(responseJson)
+        if(responseJson.show_ad){
+          this.showInterstitialAd();
+        } else {
+        }
+      })
+      .catch(err => {
+        console.log(err)
+        ToastAndroid.show("Connection Error! Please try again", ToastAndroid.BOTTOM)
+      })
+    });
   }
 
   state = {

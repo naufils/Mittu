@@ -1,4 +1,8 @@
 rootProject.name = 'mittuapp'
+include ':react-native-svg'
+project(':react-native-svg').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-svg/android')
+include ':@react-native-firebase_admob'
+project(':@react-native-firebase_admob').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/admob/android')
 include ':react-native-admob'
 project(':react-native-admob').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-admob/android')
 include ':@react-native-firebase_auth'
@@ -17,6 +21,8 @@ include ':react-native-screens'
 project(':react-native-screens').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-screens/android')
 include ':react-native-reanimated'
 project(':react-native-reanimated').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-reanimated/android')
+include ':react-native-razorpay'
+project(':react-native-razorpay').projectDir = new File(rootProject.projectDir,   '../node_modules/react-native-razorpay/android')
 
 // apply from: '../node_modules/react-native-unimodules/gradle.groovy'
 // includeUnimodulesProjects()

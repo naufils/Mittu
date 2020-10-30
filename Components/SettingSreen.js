@@ -78,6 +78,10 @@ class SettingScreen extends React.Component {
     });
   }
 
+
+  onPressSubscription = () => {
+    this.props.navigation.navigate("PaidScreen");
+  }
   onPressSignOut = () => {
     auth()
       .signOut()
@@ -170,14 +174,14 @@ class SettingScreen extends React.Component {
           {/*<View style={styles.innerContainer}>
                 <Text style={styles.text}>Contact Us</Text>
               </View>*/}
-              
+
 
               <View style={styles.innerContainer}>
             <Text style={styles.text} onPress={() => this.onPressSubscription()}>
               Subscription
             </Text>
           </View>
-          
+
           <View style={styles.innerContainer}>
             <Text style={styles.text} onPress={() => this.onPressAbout()}>
               About

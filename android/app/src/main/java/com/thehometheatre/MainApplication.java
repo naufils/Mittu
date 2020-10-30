@@ -6,7 +6,7 @@ import com.facebook.react.ReactApplication;
 import com.sbugert.rnadmob.RNAdMobPackage;
 
 import io.invertase.firebase.auth.ReactNativeFirebaseAuthPackage;
-
+import com.razorpay.rn.RazorpayPackage;
 import com.facebook.CallbackManager;
 import com.facebook.reactnative.androidsdk.FBSDKPackage;
 import com.reactnativecommunity.clipboard.ClipboardPackage;
@@ -70,7 +70,8 @@ public class MainApplication extends Application implements ReactApplication {
                     new RNGestureHandlerPackage(),
                     new VectorIconsPackage(),
                     new LinearGradientPackage(),
-                    new ReactVideoPackage()
+                    new ReactVideoPackage(),
+                    new RazorpayPackage()
                     // new ModuleRegistryAdapter(mModuleRegistryProvider)
             );
         }
@@ -93,4 +94,3 @@ public class MainApplication extends Application implements ReactApplication {
     }
 
 }
-

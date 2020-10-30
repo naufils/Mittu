@@ -6,9 +6,11 @@ import {
   StyleSheet,
   Image,
   ScrollView,
+  AsyncStorage,
   TouchableOpacity,
   StatusBar,
   RefreshControl,
+  ToastAndroid,
   BackHandler,
   ActivityIndicator,
 } from "react-native";
@@ -22,6 +24,7 @@ class Comedy extends React.Component {
     renderItems: [],
     refresh: false,
     loading: false,
+    show_ad:false
   };
 
   componentDidMount() {
@@ -34,7 +37,29 @@ class Comedy extends React.Component {
       refresh: false,
       loading: true,
     });
+    AsyncStorage.getItem("hometheaterusername", (err, email)=>{
 
+      fetch(`${config.localhost_url}/planpurchased`,{
+        method: 'POST',
+        headers:{
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({email: email})
+      })
+      .then((response) => response.json())
+      .then((responseJson) => {
+        console.log(responseJson)
+        ToastAndroid.show("show_ad"+responseJson.show_ad, ToastAndroid.BOTTOM)
+
+        this.setState({
+          show_ad:responseJson.show_ad
+        })
+      })
+      .catch(err => {
+        console.log(err)
+        ToastAndroid.show("Connection Error! Please try again", ToastAndroid.BOTTOM)
+      });
+    });
     return fetch(config.localhost_url + "/fetch-comedy", {
       method: "GET",
       headers: {
@@ -201,11 +226,20 @@ class Comedy extends React.Component {
               alignItems: "center",
             }}
           >
+          {
+            this.state.show_ad
+            ?
+            <>
+            <Text>I will show up here</Text>
             <AdMobBanner
               adSize="banner"
               adUnitID="ca-app-pub-7756898445257106/9371736210"
               onAdFailedToLoad={(error) => console.log(error)}
             />
+            </>
+            :
+            <Text>''</Text>
+          }
           </View>
         </ScrollView>
       </SafeAreaView>
