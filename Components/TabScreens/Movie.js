@@ -7,6 +7,7 @@ import {
   Image,
   ScrollView,
   TouchableOpacity,
+  AsyncStorage,
   StatusBar,
   RefreshControl,
   BackHandler,
@@ -22,6 +23,7 @@ class Movie extends React.Component {
     renderItems: [],
     refresh: false,
     loading: false,
+    show_ad:false,
   };
 
   componentDidMount() {
@@ -29,6 +31,29 @@ class Movie extends React.Component {
       "hardwareBackPress",
       this.handleBackPress
     );
+
+        AsyncStorage.getItem("hometheaterusername", (err, email)=>{
+
+          fetch(`${config.localhost_url}/planpurchased`,{
+            method: 'POST',
+            headers:{
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({email: email})
+          })
+          .then((response) => response.json())
+          .then((responseJson) => {
+            console.log(responseJson)
+
+            this.setState({
+              show_ad:responseJson.show_ad
+            })
+          })
+          .catch(err => {
+            console.log(err)
+            ToastAndroid.show("Connection Error! Please try again", ToastAndroid.BOTTOM)
+          });
+        });
     this.setState({
       renderItems: [],
       refresh: false,
@@ -204,11 +229,19 @@ class Movie extends React.Component {
               alignItems: "center",
             }}
           >
+          {
+            this.state.show_ad
+            ?
+            <>
             <AdMobBanner
               adSize="banner"
               adUnitID="ca-app-pub-7756898445257106/9371736210"
               onAdFailedToLoad={(error) => console.log(error)}
             />
+            </>
+            :
+            <Text>''</Text>
+          }
           </View>
         </ScrollView>
       </SafeAreaView>
