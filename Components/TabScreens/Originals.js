@@ -48,6 +48,25 @@ class Featured extends React.Component {
       .catch((err)=>{
         console.log("error")
       });
+      fetch(`${config.localhost_url}/planpurchased`,{
+        method: 'POST',
+        headers:{
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({email: email})
+      })
+      .then((response) => response.json())
+      .then((responseJson) => {
+        console.log(responseJson)
+
+        this.setState({
+          show_ad:responseJson.show_ad
+        })
+      })
+      .catch(err => {
+        console.log(err)
+        ToastAndroid.show("Connection Error! Please try again", ToastAndroid.BOTTOM)
+      });
     });
     this.backHandler = BackHandler.addEventListener(
       "hardwareBackPress",
@@ -302,11 +321,19 @@ class Featured extends React.Component {
                 alignItems: "center",
               }}
             >
+            {
+              this.state.show_ad
+              ?
+              <>
               <AdMobBanner
                 adSize="banner"
                 adUnitID="ca-app-pub-7756898445257106/9371736210"
                 onAdFailedToLoad={(error) => console.log(error)}
               />
+              </>
+              :
+              <Text>''</Text>
+            }
             </View>
             {featuredList}
           </View>

@@ -24,7 +24,8 @@ class Comedy extends React.Component {
     renderItems: [],
     refresh: false,
     loading: false,
-    show_ad:false
+    show_ad:false,
+    unpaid:false
   };
 
   componentDidMount() {
@@ -37,6 +38,7 @@ class Comedy extends React.Component {
       refresh: false,
       loading: true,
     });
+
     AsyncStorage.getItem("hometheaterusername", (err, email)=>{
 
       fetch(`${config.localhost_url}/planpurchased`,{
@@ -49,7 +51,6 @@ class Comedy extends React.Component {
       .then((response) => response.json())
       .then((responseJson) => {
         console.log(responseJson)
-        ToastAndroid.show("show_ad"+responseJson.show_ad, ToastAndroid.BOTTOM)
 
         this.setState({
           show_ad:responseJson.show_ad
@@ -230,7 +231,6 @@ class Comedy extends React.Component {
             this.state.show_ad
             ?
             <>
-            <Text>I will show up here</Text>
             <AdMobBanner
               adSize="banner"
               adUnitID="ca-app-pub-7756898445257106/9371736210"

@@ -9,6 +9,7 @@ import {
   TouchableOpacity,
   SafeAreaView,
   FlatList,
+  AsyncStorage,
   StatusBar,
   ToastAndroid,
   RefreshControl,
@@ -33,6 +34,7 @@ export default class ExploreScreen extends React.Component {
     searchValid: false,
     loading: false,
     categoryItems: [],
+    show_ad:false,
     refresh: false,
   };
 
@@ -142,6 +144,29 @@ export default class ExploreScreen extends React.Component {
       "hardwareBackPress",
       this.handleBackPress
     );
+
+    AsyncStorage.getItem("hometheaterusername", (err, email)=>{
+
+      fetch(`${config.localhost_url}/planpurchased`,{
+        method: 'POST',
+        headers:{
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({email: email})
+      })
+      .then((response) => response.json())
+      .then((responseJson) => {
+        console.log(responseJson)
+
+        this.setState({
+          show_ad:responseJson.show_ad
+        })
+      })
+      .catch(err => {
+        console.log(err)
+        ToastAndroid.show("Connection Error! Please try again", ToastAndroid.BOTTOM)
+      });
+    });
 
     this.setState({
       ...this.state,
@@ -535,11 +560,20 @@ export default class ExploreScreen extends React.Component {
               alignItems: "center",
             }}
           >
+
+          {
+            this.state.show_ad
+            ?
+            <>
             <AdMobBanner
               adSize="banner"
               adUnitID="ca-app-pub-7756898445257106/9371736210"
               onAdFailedToLoad={(error) => console.log(error)}
             />
+            </>
+            :
+            <Text>''</Text>
+          }
           </View>
 
           {this.state.cat ? (
